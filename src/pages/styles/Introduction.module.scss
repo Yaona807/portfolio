@@ -1,5 +1,8 @@
+.body {
+    background-color: #8bd2f8;
+}
+
 .title {
-    background-color: white;
     text-align: center;
     font-size: 50px;
 }
@@ -7,6 +10,7 @@
 .myIcon {
     display: flex;
     & > img {
+        border-radius: 150px;
         margin: auto;
     }
 }

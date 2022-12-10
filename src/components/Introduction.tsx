@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function Introduction() {
 	return (
-		<div>
+		<div className={ styles.body }>
 			<div className={ styles.myIcon }>
 				<Image src="/my-icon.png" alt="my-icon" width={300} height={300}/>
 			</div>
