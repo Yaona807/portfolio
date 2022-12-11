@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: process.env.GITHUB_ACTIONS ? "/portfolio" : "",
+  basePath: process.env.GITHUB_ACTIONS && "/portfolio",
   trailingSlash: true,
 }
 
