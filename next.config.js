@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const urlPrefix = process.env.URL_PREFIX ? '/portfolio' + process.env.URL_PREFIX : ''
+const urlPrefix = '/portfolio'
 
 const nextConfig = {
   reactStrictMode: true,
