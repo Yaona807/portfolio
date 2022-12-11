@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
-const prod = process.env.NODE_ENV === 'production'
+const urlPrefix = (process.env.NODE_ENV === 'development') ? '' : '/portfolio';
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: prod ? '/portfolio' : '',
+  assetPrefix: urlPrefix,
+  basePath: urlPrefix,
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
