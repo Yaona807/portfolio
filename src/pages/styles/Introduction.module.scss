@@ -1,16 +1,16 @@
 .body {
-    background-color: #8bd2f8;
+  background-color: #8bd2f8;
 }
 
 .title {
-    text-align: center;
-    font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .myIcon {
-    display: flex;
-    & > img {
-        border-radius: 150px;
-        margin: auto;
-    }
+  display: flex;
+  & > img {
+    border-radius: 150px;
+    margin: auto;
+  }
 }
