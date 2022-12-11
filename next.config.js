@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
-const urlPrefix = '/portfolio'
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: urlPrefix,
+  basePath: process.env.GITHUB_ACTIONS ? "/portfolio" : "",
   trailingSlash: true,
 }
 
