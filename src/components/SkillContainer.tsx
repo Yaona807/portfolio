@@ -1,5 +1,6 @@
 import styles from "pages/styles/SkillContainer.module.scss";
 import Image from "next/image";
+import { getImageSrc } from "utils/utils";
 
 interface props {
   skill_item: {
@@ -11,7 +12,7 @@ interface props {
 export function SkillContainer(props: props) {
   return (
     <div className={styles.container}>
-      <Image src={props.skill_item.src} alt="icon" width={100} height={100} />
+      <Image src={getImageSrc(props.skill_item.src)} alt="icon" width={100} height={100} />
       <div className={styles.triangle}></div>
     </div>
   );
