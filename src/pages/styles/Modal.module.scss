@@ -1,0 +1,16 @@
+.body {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border-radius: 40px;
+  z-index: 1000;
+}
