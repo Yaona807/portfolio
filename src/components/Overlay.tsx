@@ -1,17 +1,15 @@
 import styles from "pages/styles/Overlay.module.scss";
 import Image from "next/image";
 import { getImageSrc } from "utils/utils";
-
-// interface props {
-//   skill_item: {
-//     skill_name: string;
-//     src: string;
-//   };
-// }
+import { useContext } from "react";
+import { ShowModalContext } from "components/SkillContainer";
 
 export function Overlay() {
-  return (
-    <div className={styles.overlay}>
-    </div>
-  );
+  const { set_show_modal } = useContext(ShowModalContext);
+
+  const onClickOverlay = () => {
+    set_show_modal(false);
+  };
+
+  return <div className={styles.overlay} onClick={onClickOverlay}></div>;
 }
