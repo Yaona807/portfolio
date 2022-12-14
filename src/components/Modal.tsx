@@ -40,7 +40,6 @@ export function Modal(props: props) {
         <div className={styles.text}>
           <span>{props.content}</span>
         </div>
-        <div className={styles.closeButton} onClick={onClickOverlay}></div>
       </div>
       <Overlay />
     </div>

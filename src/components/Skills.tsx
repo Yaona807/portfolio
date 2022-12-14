@@ -71,8 +71,8 @@ export function Skills() {
     },
   ];
   return (
-    <div>
-      <div>
+    <div className={styles.body}>
+      <div className={styles.title}>
         <span>スキル一覧</span>
       </div>
       <div className={styles.skillField}>
