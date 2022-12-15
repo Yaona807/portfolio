@@ -15,7 +15,7 @@ export function Introduction() {
           />
         </div>
         <div className={styles.title}>
-          <span>i-708's portfolio</span>
+          <span>{"i-708's portfolio"}</span>
         </div>
       </div>
     </div>
