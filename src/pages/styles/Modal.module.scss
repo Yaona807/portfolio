@@ -8,8 +8,8 @@
   position: fixed;
   inset: 0;
   margin: auto;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   background-color: #727272;
   border-radius: 40px;
   z-index: 1000;
@@ -17,9 +17,10 @@
 }
 
 .title {
-  width: inherit;
+  width: 100%;
   margin: auto;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 30px;
   text-align: center;
   font-family: serif;
@@ -27,10 +28,12 @@
 }
 
 .text {
-  width: inherit;
-  margin: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 18px;
   font-family: serif;
+  white-space: pre-wrap;
   color: #ffffff;
 }
 
